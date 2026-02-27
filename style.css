@@ -20,7 +20,7 @@ html {
 body {
   min-height: 100%;
   background: var(--bg-dark);
-  font-family: 'Lora', Georgia, serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   color: var(--parchment);
   line-height: 1.7;
   font-size: 18px;
@@ -57,11 +57,11 @@ body {
 }
 
 .logo {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 1.4rem;
+  font-family: 'VT323', monospace;
+  font-size: 1.6rem;
   color: var(--accent);
   text-decoration: none;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.05em;
 }
 .logo:hover {
   color: var(--accent-light);
@@ -73,11 +73,12 @@ body {
 }
 
 .site-nav a {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 0.95rem;
+  font-family: 'VT323', monospace;
+  font-size: 1.15rem;
   color: var(--muted);
   text-decoration: none;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   transition: color 0.3s ease;
 }
 
@@ -89,9 +90,8 @@ body {
   color: var(--accent);
 }
 
-.site-nav a.active {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+.site-nav a.active::before {
+  content: '> ';
 }
 
 /* ===== CONTENT ===== */
@@ -105,30 +105,30 @@ body {
 
 /* ===== TYPOGRAPHY ===== */
 h1, h2, h3, h4 {
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  letter-spacing: 0.01em;
+  font-family: 'VT323', monospace;
+  font-weight: 400;
+  letter-spacing: 0.02em;
   color: var(--accent);
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   margin-bottom: 0.3rem;
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-bottom: 0.8rem;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
 
 .subtitle {
-  font-family: 'Lora', serif;
-  font-size: 1.05rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
   font-style: italic;
   color: var(--muted);
   line-height: 1.5;
@@ -177,15 +177,15 @@ a:hover {
 }
 
 .card-title {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 1.1rem;
+  font-family: 'VT323', monospace;
+  font-size: 1.2rem;
   color: var(--parchment);
   margin-bottom: 0.3rem;
 }
 
 .card-meta {
-  font-family: 'Lora', serif;
-  font-size: 0.85rem;
+  font-family: 'VT323', monospace;
+  font-size: 0.9rem;
   color: var(--muted);
 }
 
@@ -197,9 +197,10 @@ a:hover {
 
 /* ===== LABEL ===== */
 .label {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 0.85rem;
-  letter-spacing: 0.04em;
+  font-family: 'VT323', monospace;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   color: var(--muted);
 }
 
@@ -249,8 +250,8 @@ a:hover {
 }
 
 .footer-links a {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 0.85rem;
+  font-family: 'VT323', monospace;
+  font-size: 1.1rem;
   color: var(--muted);
   text-decoration: none;
   transition: color 0.3s ease;
@@ -261,8 +262,8 @@ a:hover {
 }
 
 .footer-year {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 0.85rem;
+  font-family: 'VT323', monospace;
+  font-size: 1.1rem;
   color: var(--muted);
 }
 
@@ -295,7 +296,7 @@ a:hover {
   }
 
   .logo {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .site-nav {
@@ -303,7 +304,7 @@ a:hover {
   }
 
   .site-nav a {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 
   .content {
@@ -311,11 +312,11 @@ a:hover {
   }
 
   h1 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   h2 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   .site-footer {
