@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Irénée</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Irénée</title>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header class="fade-in">
-            <h1>Irénée</h1>
-        </header>
 
-        <section class="bio fade-in">
-            <p>Hello, this is Irénée. blablabla</p>
-        </section>
+<div class="bg-image"></div>
 
-        <section class="thinking fade-in">
-            <h2>Topics I'm thinking about lately</h2>
-            <ul class="topics-list">
-                <li class="topic-item">—</li>
-                <li class="topic-item">—</li>
-                <li class="topic-item">—</li>
-            </ul>
-        </section>
+<div class="page-wrapper">
+  <header class="site-header">
+    <a href="index.html" class="logo">/ir</a>
+    <nav class="site-nav">
+      <a href="about/index.html">About</a>
+      <a href="thoughts/index.html">Thoughts</a>
+      <a href="reading/index.html">Reading</a>
+    </nav>
+  </header>
 
-        <section class="links fade-in">
-            <h2>Find me elsewhere</h2>
-            <div class="link-list">
-                <a href="https://x.com/ireneemrtr" target="_blank" rel="noopener noreferrer" class="link-item">
-                    <span class="link-icon">𝕏</span>
-                    <span class="link-text">X / Twitter</span>
-                </a>
-                <a href="https://substack.com/@ireneemrtr" target="_blank" rel="noopener noreferrer" class="link-item">
-                    <span class="link-icon">✎</span>
-                    <span class="link-text">Substack</span>
-                </a>
-            </div>
-        </section>
+  <main class="content">
+    <h1>Irénée Martre</h1>
+    <p class="subtitle">subtitle goes here.</p>
 
-        <footer class="fade-in">
-            <p class="footer-text">© 2024 Irénée</p>
-        </footer>
+    <hr class="divider">
+
+    <p>Hello, this is Irénée. blablabla</p>
+
+    <ul class="featured-links">
+      <li><a href="https://substack.com/@ireneemrtr" target="_blank">Substack &mdash; my newsletter</a></li>
+      <li><a href="https://x.com/ireneemrtr" target="_blank">X / Twitter</a></li>
+    </ul>
+
+    <hr class="divider">
+
+    <p style="font-size: 0.9rem; color: var(--muted);">I'm usually at email@example.com.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="https://x.com/ireneemrtr" target="_blank">X</a>
+      <a href="https://substack.com/@ireneemrtr" target="_blank">Substack</a>
     </div>
+    <span class="footer-year">2025</span>
+  </footer>
+</div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
