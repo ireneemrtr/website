@@ -298,13 +298,31 @@ a:hover {
 }
 
 .about-list li {
-  padding: 0.6rem 0;
+  padding: 1rem 0 1rem 1.4rem;
   border-bottom: 1px solid var(--border);
   line-height: 1.65;
+  position: relative;
+}
+
+.about-list li::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-family: 'VT323', monospace;
+  font-size: 1.1rem;
+  top: 1.1rem;
 }
 
 .about-list li:last-child {
   border-bottom: none;
+}
+
+.about-list li strong:first-child {
+  font-size: 1.08em;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--accent-dim);
 }
 
 /* ===== PROSE (about page, long text) ===== */
