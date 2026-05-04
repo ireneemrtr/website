@@ -35,6 +35,7 @@ body {
   image-rendering: auto;
 }
 
+
 /* ===== PAGE WRAPPER ===== */
 .page-wrapper {
   position: relative;
@@ -176,6 +177,13 @@ a:hover {
   display: block;
 }
 
+.about-card a {
+  display: inline;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: var(--parchment);
+}
+
 .card-title {
   font-family: 'VT323', monospace;
   font-size: 1.2rem;
@@ -267,18 +275,73 @@ a:hover {
   color: var(--muted);
 }
 
+/* ===== ABOUT CARDS ===== */
+.about-card {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--parchment);
+}
+
+.about-card p {
+  margin-bottom: 0.8rem;
+}
+
+.about-card p:last-child {
+  margin-bottom: 0;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.8rem;
+}
+
+.about-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  line-height: 1.65;
+}
+
+.about-list li:last-child {
+  border-bottom: none;
+}
+
 /* ===== PROSE (about page, long text) ===== */
+.prose {
+  background: rgba(10, 8, 8, 0.72);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 2rem 2.4rem;
+  border: 1px solid var(--border);
+}
+
 .prose p {
   margin-bottom: 1.2rem;
 }
 
+.prose h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-top: 2.2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--accent-dim);
+}
+
 .prose ul, .prose ol {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.4rem;
   padding-left: 1.5rem;
 }
 
 .prose li {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.65;
 }
 
 .prose blockquote {
