@@ -48,6 +48,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 3.4rem;
+  padding-bottom: 3.4rem;
 }
 
 /* ===== HEADER ===== */
@@ -254,6 +255,11 @@ a:hover {
 
 /* ===== FOOTER ===== */
 .site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
