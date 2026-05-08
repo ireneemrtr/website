@@ -20,7 +20,7 @@ html {
 
 body {
   height: 100%;
-  overflow-y: auto;
+  overflow-y: scroll;
   overscroll-behavior-y: none;
   scroll-behavior: smooth;
   background: var(--bg-dark);
