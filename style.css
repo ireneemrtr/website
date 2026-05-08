@@ -92,6 +92,7 @@ body {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: color 0.3s ease;
+  position: relative;
 }
 
 .site-nav a:hover {
@@ -103,7 +104,9 @@ body {
 }
 
 .site-nav a.active::before {
-  content: '> ';
+  content: '>';
+  position: absolute;
+  left: -0.9em;
 }
 
 /* ===== CONTENT ===== */
