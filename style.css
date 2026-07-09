@@ -206,18 +206,19 @@ a:hover {
   font-weight: 600;
   color: var(--parchment);
   margin-bottom: 0.3rem;
+  font-variant-numeric: lining-nums;
 }
 
 .card-meta {
   font-family: 'VT323', monospace;
   font-size: 0.9rem;
   color: var(--muted);
+  margin-top: 0.5rem;
 }
 
 .card-body {
   font-size: 0.95rem;
   color: rgba(240, 230, 210, 0.7);
-  margin-top: 0.5rem;
 }
 
 /* ===== LABEL ===== */
