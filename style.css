@@ -228,6 +228,23 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--muted);
+  margin: 2rem 0 1rem;
+}
+
+.card.upcoming {
+  border-style: dashed;
+  background: transparent;
+}
+
+.card.upcoming:hover {
+  border-color: var(--border);
+  background: transparent;
+}
+
+.card.upcoming .card-title {
+  color: var(--muted);
+  font-style: italic;
+  margin-bottom: 0;
 }
 
 /* ===== FEATURED LINKS (home) ===== */
